@@ -47,5 +47,15 @@ namespace TestExercicios
             Assert.IsTrue(erro);
 
         }
+        [TestMethod]
+        public void TestaMemória()
+        {
+            erro = true;
+            c.Memoria1 = 100;
+            c.Memoria2 = 200;
+            if (c.Memoria1 == 100 && c.Memoria2 == 200) erro = false; ;
+            Assert.IsFalse(erro);
+
+        }
     }
 }
